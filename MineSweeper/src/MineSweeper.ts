@@ -35,7 +35,7 @@ export class MineSweeper {
 		return this.map;
 	}
 
-	isValidInput(private mines: number, private rows: number, private columns: number): boolean {
+	isValidInput(mines: number, rows: number, columns: number): boolean {
 		return mines >= 0 && rows > 0 && columns > 0 && mines <= rows * columns;
 	}
 }
